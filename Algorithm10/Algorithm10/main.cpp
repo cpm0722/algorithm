@@ -204,7 +204,8 @@ int main(void) {
 	sum_of_subsets(subset, 0, 0, total, W, w);
 	QueryPerformanceCounter(&end);
 	int microsec2 = (end.QuadPart - start.QuadPart) / (f.QuadPart / 1000000);
-	printf("하나의 해답만 찾는 알고리즘의 수행시간: %dmicroSecond\n모든 해답 찾는 알고리즘의 수행시간: \t%dmicroSecond\n", microsec1, microsec2);
+	printf("하나의 해답만 찾는 알고리즘의 수행시간: %dmicroSecond\n", microsec1);
+	printf("모든 해답 찾는 알고리즘의 수행시간: \t%dmicroSecond\n", microsec2);
 
 	
 	//Question 17
